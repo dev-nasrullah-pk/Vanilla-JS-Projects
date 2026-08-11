@@ -1,2 +1,2 @@
 # Vanilla-JS-Projects
-A collection of responsive Vanilla JavaScript micro-apps and tools.
+A collection of frontend web development projects and UI components built using pure HTML, CSS, and Vanilla JavaScript.
