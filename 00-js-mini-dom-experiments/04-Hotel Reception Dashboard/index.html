@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Reception Dashboard</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+        }
+        .dashboard{
+            max-width: 600px;
+            margin: 0 auto; 
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .widget {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0px;
+        }
+        .hidden{
+            display: none;
+        }
+        .alert-box{
+            padding: 10px;
+            margin-top: 10px ;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        button{
+            padding: 8px 15px;
+            cursor: pointer;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <h2>🏨 Royal Hotel - Staff Panel</h2>
+        <div class="widget">
+            <button class="faq-btn">Pool Access Policy</button>
+            <p id="faq-ans" class="hidden">Swimming pool is 100% free for all registered guests from 8 AM to 10 PM.</p>
+        </div>
+        <div class="widget">
+            <button id="bell-btn">🔔 Notifications</button>
+            <div id="notif-box" class="hidden">
+                <p>• Room 302 checked out.</p>
+                <p>• New booking received from Nasrullah.</p>
+            </div>
+        </div>
+        <div class="widget"> 
+            <button id="msg-btn" class="alert-box">Get Live Alert</button>
+            <div id="hotel-alert" class="alert-box">Click button for live updates...</div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
